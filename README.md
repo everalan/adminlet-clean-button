@@ -50,6 +50,14 @@ $('input').clearbutton(options);
 | ------------ | ------- | ----- | ----------------------------- |
 | focusOnClear | Boolean | 否     | 清空内容后是否聚焦，默认为聚焦    |
 
+
+### 兼容 select2
+`select2` 自带的 `allowClear` 参数生成的关闭按钮太丑了。`clearbutton` 对此做了一个替代。
+只要在 `select2` 调用后手动对生成的 `span` 元素调用 `clearbutton` 即可
+````js
+$('#name').select2();
+$('#name + .select2-container').clearbutton();
+````
 ## License
 
 MIT  

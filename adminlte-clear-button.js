@@ -6,6 +6,11 @@
         this.input = $(elem).find('input');
         this.button = $('<i class="fas fa-times-circle"></i>').appendTo(elem)
 
+        //适配select2, select 在elem的前边
+        if(this.elem.hasClass('select2-container')) {
+            this.input = this.elem.prev();
+        }
+
         this.opts = $.extend({}, this.opts, opts);
         this.initEvent();
     }
@@ -25,7 +30,7 @@
             this.button.removeClass('clearbutton-show');
         },
         check: function(){
-            if(this.input.val() === '') {
+            if(this.input.val() == '') {
                 this.hide();
             }else{
                 this.show();

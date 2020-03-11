@@ -1,2 +1,32 @@
-div.form-control:hover i.clearbutton-show{display:block;}
-div.form-control i{display:none;}
+div.form-control{
+    position: relative;
+}
+div.form-control input{
+    width:100%;
+    height:100%;
+    border:0;
+    outline-width: 0;
+}
+div.form-control input::placeholder {
+    color: #939ba2;
+    opacity: 1;
+}
+div.form-control i, .select2-container > i{
+    cursor: pointer;
+    color:#939ba2;
+    position:absolute;
+    right:9px;
+    top:50%;
+    margin-top:-10px;
+    border-radius: 50%;
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    width: 20px;
+    display: none;
+}
+.select2-container > i{
+    right:25px;
+}
+div.form-control:hover i.clearbutton-show, .select2-container:hover > i.clearbutton-show{display:block;}
