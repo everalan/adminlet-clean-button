@@ -3,7 +3,7 @@
 清除表单输入框的内容的小按钮，仅在 AdminLTE 中使用。
 
 
-## Quick start
+## 快速开始
 
 1\.  引入 js 和 css 文件
 
@@ -25,9 +25,10 @@
 ```
 
 
-3\. Enjoy!
+3\. 查看效果  
+![效果](https://github.com/everalan/adminlet-clean-button/raw/master/screenshot.png)
 
-## 属性参考
+## DOM 属性参考
 ### data-toggle="clearbutton"
 添加了该属性后，将自动获得清除内容的功能  
 
@@ -45,8 +46,8 @@ $('input').clearbutton(options);
 ````
 
 ### 可选参数
-| 参数          | 类型    | 必填   | 说明                          |
-| ------------ | :-----: | :---: | :---------------------------: |
+| 参数          | 类型    | 必填   | 说明                           |
+| ------------ | ------- | ----- | ----------------------------- |
 | focusOnClear | Boolean | 否     | 清空内容后是否聚焦，默认为聚焦    |
 
 ## License
