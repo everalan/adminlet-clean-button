@@ -2,7 +2,6 @@
     "use strict";
 
     var Plugin = function(elem, opts) {
-        console.log(this);
         this.elem = $(elem);
         this.input = $(elem).find('input');
         this.button = $('<i class="fas fa-times-circle"></i>').appendTo(elem)
@@ -41,7 +40,6 @@
         },
 
         initEvent: function(){
-            console.log(this.opts);
             var self = this;
             this.input.on('input', function(){
                 self.check();
@@ -59,7 +57,6 @@
     $.fn.clearbutton = function(opts) {
         return this.each(function(){
             var options = $.extend({}, opts);
-            console.log(this.hasAttribute('data-do-not-focus'));
             if(this.hasAttribute('data-do-not-focus')) {
                 options.focusOnClear = false;
             }
