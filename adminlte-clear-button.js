@@ -30,7 +30,7 @@
             this.button.removeClass('clearbutton-show');
         },
         check: function(){
-            if(this.input.val() == '') {
+            if(this.input.val() === '' || this.input.val() === null) {
                 this.hide();
             }else{
                 this.show();
